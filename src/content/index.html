@@ -1,40 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
+<html lang="pl">
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+<body>
+	<section class="main">
+		<header class="site__header">
+			<nav class="navigation">
+				<ul class="navigation__list navigation__list--js">
+					<li><a class="navigation__item" href="index.html"> Strona Główna</a>
+					</li>
+					<li><a class="navigation__item" href="podstrona.html"> Robienie HTML-a</a>
+					</li>
+					<li><a class="navigation__item" href="Podstrona 2.html">Robienie zdjęć</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">☰</button>	
+		</header>
+		<main>
+			<header>
+				<h1 class="header__title">
+					Piotr Sienkiewicz - Strona domowa - pozdro github
+				</h1>
+			</header>
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+			<section class="about__header">
+				<h2 class="about__paragraph">Kim jestem?</h2>
+				<p>
+					Jestm inżynierem chcącym się <b>przebranżowić na IT</b>. w wolnym czasie cykam foty i kręcę filmy.
+					Chciał bym
+					zacząć kodować w <strong>JS</strong> i ogólnie poznać budowe aplikacji, mam nadzieję że się wkręcę
+					:)
+					<br>
+					<a class="about__link" href="#Pamietniczek">Przejdź do pamiętniczka</a>
+				</p>
+				<p class="about__paragraph about__paragraph--color about__paragraph--js">
+					testuje modyfikator
+				</p>
+			</section>
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
 
-    <script src="js/main.js"></script>
-  </body>
+
+			<section id="Pamietniczek">
+				<h2 class="diary__header"> Pamiętniczek</h2>
+				<div class="grid__article">
+					<p class="day__paragraph">
+						Tutaj będziemy raportować na bierząco postęp prac i to jak ta strona będzie wyglądać póki co
+						jest bieda
+						:D
+					</p>
+					<section class="day">
+						<h3 class="day__header">
+							Jak stworzyć prawidłowego <i>HTML-a</i>?
+						</h3>
+						<p class="day__paragraph">
+							Mam nadzieje że Maciek pokaże jak to się robi bo jest to w miarę logiczne ale trzeba troche
+							tego
+							porobić żeby skumać póki co <em> HTML</em> jest w miarę jasny <br>
+							<a class="day__link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
+						</p>
+					</section>
+					<section class="day">
+						<h3 class="day__header">
+							Czy robienie zdjęć jest cieżkie?
+						</h3>
+						<p class="day__paragraph">
+							dużo prostsze jest tarcie chrzanu :D a tak serio to to czysto techniczna sprawa można nie
+							mieć
+							umiejętności oka a umieć robić dobre zdjęcia albo mieć ładne modelki :D <br>
+							<a class="navigation__link" href="Podstrona 2.html">Przejdź do artykułu o robieniu zdjęć</a>
+						</p>
+					</section>
+					<section class="day">
+						<h3 class="day__header">
+							Jak uczyć się robienia zdjęć ?
+						</h3>
+						<p class="day__paragraph">
+							dużo ćwiczyć przedewszystkim nie szukaj wymówek że nie masz sprzętu wystarczy Ci teledon
+							który mas
+							zzawsze pod reką <strong>NO EXCUSES!<strong> <br>
+									<a class="navigation__link" href="Podstrona 2.html">Przejdź do artykułu o robieniu
+										zdjęć</a>
+						</p>
+
+					</section>
+				</div>
+			</section>
+			<section class="glossary">
+				<header>
+					<dl>
+						<dt>CSS</dt>
+						<dd>Style (to co widzisz jest ładne albo brzydkie)</dd>
+						<dt>HTML</dt>
+						<dd>treść + szkielet strony</dd>
+						<dt>Javascript</dt>
+						<dt>Es6</dt>
+						<dd>rzeczy których teraz ise uczę</dd>
+					</dl>
+				</header>
+			</section>
+
+			<section class="data">
+				<header class="data">
+					<table class="table">
+						<caption>Oceny z I semestru</caption>
+						<thead>
+							<tr>
+								<th>Imię nazwisko</th>
+								<th>Ocena</th>
+								<th>Data</th>
+							</tr>
+							<th>Piotr Sienkiewicz</th>
+							<th>3</th>
+							<th>24.03.2020</th>
+							<tr>
+								<th> Ktoś lepszy</th>
+								<th>5</th>
+								<th>24.03.2020</th>
+							</tr>
+						</thead>
+
+					</table>
+				</header>
+			</section>
+	</section>
+	</main>
+
+	<footer class="stopka">
+		Strona domowa Piotrka Sienkiewicza, wszystkie treści są efektem tworzenia szkolenia WTF: Co ten frontend
+	</footer>
+	<script src="js/main.js" ;>	</script>
+</body>
+
 </html>
